@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-james-wheeler-417074.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: Roboto;
+  height: 100vh;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: baseline;
+  margin: 0 auto 0 auto;
+  background-color: #00000038;
+}
+.Header > img {
+  margin-left: 15px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+}
+.inpt {
+  width: 60%;
+}
+.inpt > input {
+  width: 100%;
+  margin: 15px;
+  height: 30px;
+  opacity: 0.7;
+}
+.inpt > input:focus {
+  opacity: 0.9;
+}
+.btns {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconed {
+  display: none;
+}
+/* .iconet.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  cursor: pointer;
+
+  display: none;
+} */
+.btns > button {
+  border-radius: 5px;
+  font-weight: 800;
+  border: none;
+  background-color: #ffff;
+}
+#btn1 {
+  background-color: transparent;
+  color: white;
+}
+.container {
+  margin-top: 7%;
+  color: white;
+}
+.container > h2 {
+  font-size: 50px;
+}
+.container > h3 {
+  font-size: 25px;
+}
+h2,
+h3 {
+  padding: 1%;
+  margin: 1%;
+}
+.container > button {
+  padding: 20px;
+  font-size: 125%;
+  font-weight: 900;
+  border-radius: 7px;
+  margin: 1%;
+  background-color: #ffffff;
+}
+/* footer section */
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.footer > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 1%;
+  width: 100%;
+  color: #878787;
+}
+#option {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#lastlist {
+  display: flex;
+}
+@media only screen and (max-width: 650px) {
+  .btns {
+    width: auto;
+  }
+  #btn1 {
+    width: auto;
+  }
+  .inpt {
+    display: none;
+  }
+
+  .iconed {
+    display: flex;
+  }
+  .iconet {
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+  }
+  .container {
+    margin-top: 15%;
+    margin-bottom: 2%;
+  }
+  .btns > button {
+    width: auto;
+  }
+  .footer {
+    display: block;
+    padding: 10px;
+    position: unset;
+    height: auto;
+  }
+  .footer > ul {
+    display: block;
+    text-align: start;
+  }
+  li {
+    border-bottom: solid 1px #87878782;
+    padding: 5px;
+  }
+}
